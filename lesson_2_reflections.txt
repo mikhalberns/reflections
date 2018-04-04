@@ -1,0 +1,32 @@
+What happens when you initialize a repository? Why do you need to do it?
+ברגע שמאתחלים את הrepo, נוצר קובף .git שמוסתרת הממשק משתמש, ויתן לראות רק באמצעות הגיט. כאשר נרשום את הפקודה ls -a נראה את כל הקבצים שיש לי בrepo, כולל .git.
+המטרה של האתחול היא בשביל לצרף את קובץ הגיט ע"מ שנוכל ליצור קומיטים ןלמור גרסאות של קבצים שנוסיף מעתה והלאה.
+פקודה נוספת שעשויה לעזור בשלב זה היא git ststus פקודה זו תציג בפעם הראשונה לאחר אתחול התיקייה:
+$ $ git status
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        reflections.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash: $: command not found
+ניתן לראות שהפקודה מציגה כמה קומיטים נעשו אם בכלל (כמו במקרה זו שטרם נעשו). ואלו קבצים יש בתיקייה.
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
